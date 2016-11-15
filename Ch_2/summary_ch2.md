@@ -4,11 +4,11 @@
     2. **Member function** : A function defined as part of a class.
     3. **:: operator** : Scope operator used to access names in a namespace.
     4. **Reference** : just another name for an already existing object.
-    ```C++
-        int val = 1024;
-        int &refVal = val; //now we defined a reference named refVal refers to val and reference must be initialized.
-        return 0;
-    ```
+        ```C++
+            int val = 1024;
+            int &refVal = val; //now we defined a reference named refVal refers to val and reference must be initialized.
+            return 0;
+        ```
         * *Notations* :
             1. initializer must be an object;
             2. type match;
@@ -16,28 +16,28 @@
             4. once we initialized a reference, we can't change it.
 
     5. **Pointer** : A pointer holds the address of another object.
-    ```C++
-        int val = 1024;
-        int *p = &val;//type match !!!
-        int var = *p;//dereference to use the object p points.
+        ```C++
+            int val = 1024;
+            int *p = &val;//type match !!!
+            int var = *p;//dereference to use the object p points.
 
-        int *p1 = nullptr;//initialized a null pointer
-        int *p2 = 0;//same as above
-        int *p3 = NULL;//same as above
+            int *p1 = nullptr;//initialized a null pointer
+            int *p2 = 0;//same as above
+            int *p3 = NULL;//same as above
 
-        //pointers can be changed
-        int val1 = 2048;
-        *p = &val1;//now p points to val1 not val
-        double obj = 3.14, *p4 = &obj;
-        void *p5 = &obj;//void* pointer can hold the address of any type
-        p5 = p4;//it's ok.
+            //pointers can be changed
+            int val1 = 2048;
+            *p = &val1;//now p points to val1 not val
+            double obj = 3.14, *p4 = &obj;
+            void *p5 = &obj;//void* pointer can hold the address of any type
+            p5 = p4;//it's ok.
 
-        //and we can define a reference to a pointer
-        int i = 42;
-        int *p6 =;
-        int *&r = p6;//r is a reference to the pointer p6
-        r = &i;//as r is the ref of a pointer, so we can initialize it as a pointer
-    ```
+            //and we can define a reference to a pointer
+            int i = 42;
+            int *p6 =;
+            int *&r = p6;//r is a reference to the pointer p6
+            r = &i;//as r is the ref of a pointer, so we can initialize it as a pointer
+        ```
         * *Notations* :
             1. Read the definition right to left for better understanding.
             2. The symbol closest to the name of the variable has the most immediate effect on the variable's type.

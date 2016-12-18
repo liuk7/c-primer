@@ -30,5 +30,3 @@ How to use the **Github** to track my study of *C++ Primer*, here are some princ
         ...
 
 3. All the source files of every chapter should be stored in the *CH_x* files folders, respectively.
-
-4.

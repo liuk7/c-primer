@@ -7,9 +7,9 @@ int main() {
   getline(cin, s);
 
   for (auto &a : s) {
-    a = 'X';
+    if (!ispunct(a))
+      cout << a;
   }
-  cout << s << endl;
 
   return 0;
 }

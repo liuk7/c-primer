@@ -6,9 +6,12 @@ int main() {
   string s;
   getline(cin, s);
 
-  for (auto &a : s) {
-    a = 'X';
+  int i = 0;
+  while (i < s.size()) {
+    s[i] = 'X';
+    i++;
   }
+
   cout << s << endl;
 
   return 0;
